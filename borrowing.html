@@ -15,9 +15,55 @@
     </header>
 
     <body>
-      <div>
-        
+      <!-- here we add our contact forms -->
+      {% block content %}
+      <div class="contact">
+          <h3>Contact us</h3>
+          <form action="{{ url_for('get_contact') }}" method=post>
+              <div>
+
+                  <p>
+                      {{ form.name.label }} <br>
+                      {{ form.name(placeholder='Name') }}
+                  </p>
+
+                  <p>
+                      {{ form.email.label }} <br>
+                      {{ form.email(placeholder='Email') }}
+                  </p>
+
+                  <p>
+                      {{ form.phone.label }}<br>
+                      {{form.phone(placeholder='Phone Number')}}
+                  </p>
+
+                  <p>
+                      {{ form.address.label }}<br>
+                      {{ form.address(placeholder='Address') }}
+                  </p>
+
+                  <p>
+                      {{ form.item.label }}<br>
+                      {{ form.item(placeholder='Item') }}
+                  </p>
+
+                  <p>
+                      {{ form.price.label }}<br>
+                      {{ form.price(placeholder='Price') }}
+                  </p>
+
+                  <p>
+                      {{ form.description.label }}<br>
+                      {{ form.description(placeholder='Item Description') }}
+                  </p>
+                  
+                  <p>
+                      {{ form.submit }}
+                  </p>
+              </div>
+          </form>
       </div>
+      {% endblock %}
 
     </body>
 </html>
