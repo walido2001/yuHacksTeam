@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/borrowingstyle.css') }}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <header>
@@ -8,17 +8,16 @@
         <ul id="navbar">
           <li id="logo"><a>YuRENT</a></li>
           <li class = "hoverable" href="main.html">BROWSE</li>
-          <li class = "hoverable" href="#">POST A BORROWING</li>
+          <li class = "hoverable" href="borrowing.html/contactus">POST A BORROWING</li>
         </ul>
 
 
     </header>
 
     <body>
-      <!-- here we add our contact forms -->
       {% block content %}
       <div class="contact">
-          <h3>Contact us</h3>
+          <h3>Put your item up for borrowing</h3>
           <form action="{{ url_for('get_contact') }}" method=post>
               <div>
 
@@ -56,7 +55,7 @@
                       {{ form.description.label }}<br>
                       {{ form.description(placeholder='Item Description') }}
                   </p>
-                  
+
                   <p>
                       {{ form.submit }}
                   </p>

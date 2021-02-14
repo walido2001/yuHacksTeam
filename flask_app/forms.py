@@ -3,9 +3,9 @@ from wtforms import TextField, BooleanField, TextAreaField, SubmitField
 class ContactForm(FlaskForm):
     name = TextField("Name")
     email = TextField("Email")
-    phone = TextField("phone")
-    address = TextAreaField("address")
-    item = TextAreaField("item")
-    price = TextAreaField("price")
-    description = TextAreaField("description")
-    
+    phone = TextField("Phone")
+    address = TextAreaField("Address")
+    item = TextAreaField("Item")
+    price = TextAreaField("Price")
+    description = TextAreaField("Description")
+    submit = SubmitField("Send")
