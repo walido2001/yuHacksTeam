@@ -14,15 +14,25 @@ img {
   display: flex;
   justify-content: space-around;
   min-height: 60px;
-  font-size: 20px;
 }
 
 #navbar li{
-  margin-top: 15px;
   font-family: 'Anton';
+}
+
+#navbar .hoverable{
+  margin-top: 15px;
   color: #ccdbdc;
+  font-size: 20px;
 }
 
 #navbar .hoverable:hover{
   color: white;
+}
+
+#logo{
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #007ea7;
+  font-size: 30px;
 }
