@@ -40,15 +40,3 @@ img {
 body{
   background-color: #ccdbdc;
 }
-
-a:link, a:visited {
-	background-color: #ccdbdc;
-	padding: 15px 25px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-}
-
-a:hover, a:active {
-	background-color: #ccdbdc;
-}
