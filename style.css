@@ -23,6 +23,6 @@ img {
   color: #ccdbdc;
 }
 
-#navbar li:hover{
+#navbar .hoverable:hover{
   color: white;
 }
