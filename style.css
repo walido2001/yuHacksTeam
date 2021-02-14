@@ -5,9 +5,6 @@
 #navbar{
   list-style-type: none;
   background-color: #ccdbdc;
-}
-
-#navbar li{
-  float: right;
-  margin: 0 30% 0 0;
+  display: flex;
+  justify-content: space-around;
 }
