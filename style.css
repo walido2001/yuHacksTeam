@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#navbar{
+  list-style-type: none;
+  background-color: #ccdbdc;
+}
+
+#navbar li{
+  float: right;
+  margin: 0 30% 0 0;
+}
