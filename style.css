@@ -2,9 +2,27 @@
   margin: 0;
   padding: 0;
 }
+
+img {
+  display: inline-flex;
+  width: 10%;
+}
+
 #navbar{
   list-style-type: none;
-  background-color: #ccdbdc;
+  background-color: #003249;
   display: flex;
   justify-content: space-around;
+  min-height: 60px;
+  font-size: 20px;
+}
+
+#navbar li{
+  margin-top: 15px;
+  font-family: 'Anton';
+  color: #ccdbdc;
+}
+
+#navbar li:hover{
+  color: white;
 }
