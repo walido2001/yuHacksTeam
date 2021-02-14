@@ -7,9 +7,14 @@ import pandas as pd
 app = Flask(__name__)
 app.secret_key = 'secretKey'
 
-@app.route('/contactus', methods=["GET","POST"])
+@app.route('/browse')
+def display_page():
+    return render_template('main.html')
+
+@app.route('/borrowingpage', methods=["GET","POST"])
 def get_contact():
     form = ContactForm()
+
     # here, if the request type is a POST we get the data on contat
     #forms and save them else we return the contact forms html page
     if request.method == 'POST':
